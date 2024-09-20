@@ -21,7 +21,10 @@ lista de productos
         <table class="table" *ngIf="productos.length">
             <thead>
                 <tr>
-                    <th>imagen</th>
+                    <th>
+                        <button (click)="mostarImagen()" class="btn btn-primary"
+                        type="button">Imagen</button>
+                    </th>
                     <th>modelo</th>
                     <th>descripcion</th>
                     <th>año</th>
@@ -32,7 +35,7 @@ lista de productos
             </thead>
             <tbody>
                 <tr *ngFor="let producto of productos">
-                    <td>
+                    <td *ngIf="muestraImagenes">
                         <img [src]="producto.imgUrl"
                         [title]="producto.modelo"
                         [style.width.px]="imageWidth"

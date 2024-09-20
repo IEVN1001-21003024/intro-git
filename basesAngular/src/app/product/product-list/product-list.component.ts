@@ -12,6 +12,9 @@ export class ProductListComponent {
   imageMargin: number = 2;
   muestraImagenes: boolean = true;
 
+  mostarImagen(): void {
+    this.muestraImagenes = !this.muestraImagenes;
+  }
     productos: any[] = [
         {
             "productoId": 1,
@@ -21,7 +24,7 @@ export class ProductListComponent {
             "precio": 120000,
             "marca": "nisan",
             "color": "blanco",
-            "imgUrl": "https://cdn.autobild.es/sites/navi.axelspringer.es/public/bdc/dc/fotos/bugatti_bolide.jpg?tf=3840x"
+            "imgUrl": "https://media.revistagq.com/photos/5d89c9335d07090008d92dd6/16:9/w_2560%2Cc_limit/2020-mclaren-senna-mmp-1545234547.jpg"
         
         },
         {
@@ -32,7 +35,7 @@ export class ProductListComponent {
             "precio": 130000,
             "marca": "volsvagen",
             "color": "negro",
-            "imgUrl": "https://media.gq.com.mx/photos/64dd510051be22c2d963222c/16:9/w_1280,c_limit/Bugatti_Chiron_Super_Sport_Golden_Era.jpg"
+            "imgUrl": "https://www.lavanguardia.com/files/image_449_220/uploads/2022/09/19/632843ea2ef3e.png"
         
         },
         {
@@ -45,6 +48,7 @@ export class ProductListComponent {
             "color": "rojo",
             "imgUrl": "https://motor.elpais.com/wp-content/uploads/2021/08/2024-Bugatti-Bolide-5-1200x675.jpg"
         
-        },   
+        },
+        
     ]
   }
